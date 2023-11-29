@@ -24,4 +24,21 @@ public class HomeController {
     public String submit() {
         return "redirect:/other";
     }
+
+    @GetMapping("/PizzaIzolo")
+    public String pizzaIzoloPage(Model model) {
+        model.addAttribute("message", "This is the PizzaIzolo Page!");
+        return "PizzaIzolo";
+    }
+
+    @PostMapping("/back")
+    public String back() {
+        return "redirect:/home";
+    }
+
+    @GetMapping("/Reviews")
+    public String reviewsPage(Model model) {
+        model.addAttribute("message", "This is the Reviews Page!");
+        return "Reviews";
+    }
 }

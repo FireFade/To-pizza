@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .feedback-form {
+            width: 450px;
+            background: white;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .rating-section {
+            margin-bottom: 20px;
+        }
+
+        .rating-section label {
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+
+        textarea {
+            height: 100px;
+            width: 95%;/* Set a fixed height for textarea */
+            resize: none; /* Prevent resizing of the textarea */
+        }
+
+        button {
+            background-color: #000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="feedback-form">
+    <h2>Допоможіть нам стати кращими!</h2>
+    <p>Якщо у вас є зауваження або пропозиції щодо страв та обслуговуванняб будь ласка заповніть свій відгук</p>
+
+    <div class="rating-section">
+        <label>Страви</label>
+        <label>1 <input type="radio" name="dishes" value="1"></label>
+        <label>2 <input type="radio" name="dishes" value="2"></label>
+        <label>3 <input type="radio" name="dishes" value="3"></label>
+        <label>4 <input type="radio" name="dishes" value="4"></label>
+        <label>5 <input type="radio" name="dishes" value="5"></label>
+    </div>
+
+    <div class="rating-section">
+        <label>Сервіс</label>
+        <label>1 <input type="radio" name="service" value="1"></label>
+        <label>2 <input type="radio" name="service" value="2"></label>
+        <label>3 <input type="radio" name="service" value="3"></label>
+        <label>4 <input type="radio" name="service" value="4"></label>
+        <label>5 <input type="radio" name="service" value="5"></label>
+    </div>
+
+    <textarea placeholder="Коментар" required></textarea> <!-- added the required attribute -->
+    <input type="text" placeholder="Телефон">
+    <input type="text" placeholder="Email">
+    <input type="text" placeholder="Ім'я">
+    <form action="submit" method="post">
+        <button type="submit">Відправити</button>
+    </form>
+</div>
+
+</body>
+</html>

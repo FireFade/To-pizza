@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Izolo</title>
+    <style>
+        .back-arrow {
+            display: flex;
+            align-self: flex-start;
+            position: relative;
+            top: 3vh;
+            left: 3vh;
+        }
+        .card {
+            font-family: 'Arial', sans-serif;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        .card-text {
+            margin-right: 20px;
+        }
+
+        .card-text h1 {
+            font-size: 94px;
+            font-weight: 900;
+            color: #000000;
+        }
+
+        .card-text .price {
+            font-size: 20px;
+            color: #4B0000;
+            font-weight: bold;
+            font-size: 54px;
+        }
+
+        .card-image {
+            width: 80vw;
+            max-width: 400px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-info {
+            display: flex;
+            align-items: center;
+            margin-top: -2vh;
+        }
+
+        .card-info svg {
+            margin-right: 10px;
+        }
+        .grams {
+            color: #000000;
+            font-size: 54px;
+        }
+        .description {
+            font-size: 54px;
+            color: #666;
+            display: flex;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+<form class="back-arrow" action="submit" method="post">
+    <svg width="47" height="94" viewBox="0 0 47 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="6.83974" height="62.1341" rx="3.41987" transform="matrix(0.550545 -0.834437 0.669448 0.743312 0.418945 47.7844)" fill="#2B1D1D"/>
+        <path d="M6.8211 49.0765C5.53164 50.4547 3.66744 50.2784 2.65729 48.6826V48.6826C1.64714 47.0869 1.87357 44.6759 3.16302 43.2977L40.946 2.91283C42.2355 1.53458 44.0997 1.71091 45.1098 3.30668V3.30668C46.12 4.90245 45.8935 7.31337 44.6041 8.69163L6.8211 49.0765Z" fill="#2B1D1D"/>
+    </svg>
+</form>
+<div class="card">
+    <div class="card-text">
+        <h1>Ізоло</h1>
+        <p class="price">159 UAH</p>
+        <p class="description">Вершковий соус, шамон, куряче філе, ананас, дор блю, моцарела</p>
+        <div class="card-info">
+            <svg width="64" height="55" viewBox="0 0 64 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.4669 3.4375H51.2906C53.0638 3.4375 54.4965 4.97363 54.4965 6.875C54.4965 8.77637 53.0638 10.3125 51.2906 10.3125H39.9096C39.3886 13.084 37.6154 15.3721 35.261 16.4678V48.125H51.2906C53.0638 48.125 54.4965 49.6611 54.4965 51.5625C54.4965 53.4639 53.0638 55 51.2906 55H32.0551H12.8196C11.0464 55 9.61373 53.4639 9.61373 51.5625C9.61373 49.6611 11.0464 48.125 12.8196 48.125H28.8492V16.4678C26.4949 15.3613 24.7216 13.0732 24.2006 10.3125H12.8196C11.0464 10.3125 9.61373 8.77637 9.61373 6.875C9.61373 4.97363 11.0464 3.4375 12.8196 3.4375H25.6433C27.106 1.35352 29.4303 0 32.0551 0C34.6799 0 37.0042 1.35352 38.4669 3.4375ZM44.0372 34.375H58.5439L51.2906 21.0332L44.0372 34.375ZM51.2906 44.6875C44.9889 44.6875 39.7493 41.0352 38.6673 36.2119C38.4068 35.0303 38.7675 33.8164 39.3385 32.7637L48.8761 15.2324C49.377 14.3086 50.2987 13.75 51.2906 13.75C52.2824 13.75 53.2041 14.3193 53.705 15.2324L63.2426 32.7637C63.8136 33.8164 64.1743 35.0303 63.9138 36.2119C62.8318 41.0352 57.5922 44.6875 51.2906 44.6875ZM12.6994 21.0332L5.44605 34.375H19.9628L12.6994 21.0332ZM0.0861709 36.2119C-0.174309 35.0303 0.186356 33.8164 0.757408 32.7637L10.295 15.2324C10.7959 14.3086 11.7176 13.75 12.7094 13.75C13.7013 13.75 14.623 14.3193 15.1239 15.2324L24.6615 32.7637C25.2325 33.8164 25.5932 35.0303 25.3327 36.2119C24.2407 41.0352 19.001 44.6875 12.6994 44.6875C6.39781 44.6875 1.16817 41.0352 0.0861709 36.2119Z" fill="black"/>
+            </svg>
+            <p class="grams">600g</p>
+        </div>
+    </div>
+    <img class="card-image" src="image/Izolo.jpg" alt="Pizza" style="max-width:100%; max-height:100%;">
+</div>
+</body>
+</html>
