@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+<h1 th:text="${message}"></h1>
+<a th:href="@{/other}">Go to Other Page</a>
+<br/>
+<a th:href="@{/}">Go back to Home Page</a>
+<br/>
+<form action="/submit" method="post">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
