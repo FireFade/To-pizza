@@ -26,6 +26,12 @@ public class HomeController {
         return "hawaiian";
     }
 
+    @GetMapping("/american")
+    public String americanPage(Model model) {
+        model.addAttribute("message", "This is the American Page!");
+        return "american";
+    }
+
     @PostMapping("/submit")
     public String submit() {
         return "redirect:/other";
