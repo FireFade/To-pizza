@@ -20,8 +20,25 @@ public class HomeController {
         return "other";
     }
 
+    @GetMapping("/hawaiian")
+    public String hawaiianPage(Model model) {
+        model.addAttribute("message", "This is the Hawaiian Page!");
+        return "hawaiian";
+    }
+
+    @GetMapping("/american")
+    public String americanPage(Model model) {
+        model.addAttribute("message", "This is the American Page!");
+        return "american";
+    }
+
     @PostMapping("/submit")
     public String submit() {
         return "redirect:/other";
+    }
+
+    @PostMapping("/back")
+    public String back() {
+        return "redirect:/home";
     }
 }
